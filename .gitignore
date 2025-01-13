@@ -17,5 +17,5 @@ pyapp/spec/*
 *.njsproj
 *.sln
 *.sw?
-*/__pycache__
-*/__pycache__/*
+**/__pycache__/
+*.pyc
