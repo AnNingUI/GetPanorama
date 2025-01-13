@@ -31,7 +31,18 @@ GetPanorama
 │  │  │   └─*
 │  │  ├App.vue
 ```
+- 构建指令
+```bash
+# 国内用户请自行切换镜像，不然会下载的很忙
+# 初始化安装依赖 (必须一个单词不落，因为pnpm init是默认pnpm 的init而不是本项目的init)
+pnpm run init
 
+# 进入虚拟化
+./pyapp/pyenv/pyenv/Script/activate
+
+# 开始构建
+pnpm run build
+```
 
 ---
 
