@@ -5,7 +5,7 @@
 ## 介绍
 本软件分为命令行版本以及图形用户界面版本。
 
-- 命令行版本
+- [命令行版本](https://github.com/AnNingUI/GetPanorama-CIL)
 
 - 图形用户界面版本
   - 基于vue-pywebview-pyinstaller二次开发
@@ -33,7 +33,7 @@ GetPanorama
 ```
 - 构建指令
 ```bash
-# 国内用户请自行切换镜像，不然会下载的很忙
+# 国内用户请自行切换镜像，不然会下载的很慢
 # 初始化安装依赖 (必须一个单词不落，因为pnpm init是默认pnpm 的init而不是本项目的init)
 pnpm run init
 
