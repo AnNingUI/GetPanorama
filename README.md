@@ -12,7 +12,7 @@
   - 我们的源码部分
 
 ```
-VUE-PYWEBVIEW-PYINSTALLER
+GetPanorama
 ├─api
 │  ├─sandbox
 │  │  └─* 
