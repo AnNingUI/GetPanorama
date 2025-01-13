@@ -1,5 +1,6 @@
 import numpy as np
 from skimage import restoration, color, filters
+from skimage.restoration import inpaint  # 显式导入 inpaint 子模块
 from PIL import ImageFile
 from PIL import Image
 
@@ -79,7 +80,7 @@ class NoBlackBar:
 
         # 修复剩余小部分黑边
         mask = np.all(self.image == [0, 0, 0], axis=-1)
-        inpainted_image = restoration.inpaint.inpaint_biharmonic(self.image, mask, channel_axis=-1)
+        inpainted_image = inpaint.inpaint_biharmonic(self.image, mask, channel_axis=-1)
 
         # 将图像值归一化到 [0, 1]，然后转换为 uint8 类型
         inpainted_image = (np.clip(inpainted_image, 0, 1) * 255).astype(np.uint8)
